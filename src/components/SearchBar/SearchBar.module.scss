@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+
+.searchContainer {
+  display: flex;
+  border-radius: 4px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+  background-color: $yellow;
+  border-radius: 5px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (max-width: 768px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.logoContainer {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logoImg {
+  width: 100%;
+}
+
+.inputField {
+  flex: 1;
+  padding: 10px;
+  font-size: $font-large; //Para mí, es 16 pero el diseño dice esto
+  border: none;
+  outline: none;
+}
+
+.searchButton {
+  background-color: $extra-light-gray;
+  border: none;
+  cursor: pointer;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+}

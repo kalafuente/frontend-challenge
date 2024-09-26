@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  padding: $space-small;
+  background-color: $white;
+  margin-bottom: $space-large;
+}

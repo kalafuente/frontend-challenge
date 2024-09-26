@@ -1,0 +1,17 @@
+// src/styles/global.scss
+@import './variables';
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $extra-light-gray;
+  color: $dark-gray;
+  margin: 0;
+}
+
+h1 {
+  font-size: $font-large;
+}
+
+p {
+  font-size: $font-medium;
+}

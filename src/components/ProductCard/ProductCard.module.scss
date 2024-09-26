@@ -1,0 +1,68 @@
+@import '../../styles/variables.scss';
+
+.card {
+  display: flex;
+  align-items: center;
+}
+
+.cardContainer {
+  padding-top: $space-small;
+  cursor: pointer;
+
+  &:focus-visible {
+    -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--andes-color-blue-600, #2968c8), 0 0 0 5px var(--andes-color-blue-300, rgba(65, 137, 230, .3));
+    outline: none;
+  }
+
+  &:first-child {
+    padding-top: 0;
+  }
+}
+
+.separator {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: $space-small;
+
+  &:last-child {
+    display: none;
+  }
+}
+
+.image {
+  width: 180px;
+  height: 180px;
+  padding-right: $space-small;
+  border-radius: 4px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.price {
+  font-size: $font-x-large;
+}
+
+.description {
+  font-size: $font-large;
+  color: $dark-gray;
+}
+
+.location {
+  font-size: $font-xx-small;
+  color: $light-gray;
+  margin-right: $space-large;
+}
+
+.priceAndShipping {
+  display: flex;
+  align-items: center;
+  margin-bottom: $space-large;
+
+  img {
+    width: 25px;
+    margin-left: $space-small;
+  }
+}

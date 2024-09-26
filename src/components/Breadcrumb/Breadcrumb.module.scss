@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+.breadcrum {
+  padding-top: $space-small;
+  padding-bottom: $space-small;
+  font-size: $font-x-small;
+  color: $light-gray;
+}
+
+.breadcrumbList {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbItem {
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    font-weight: bold;
+  }
+}
+
+.breadcrumbSeparator {
+  margin: 0 5px;
+}
