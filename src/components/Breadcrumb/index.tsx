@@ -12,7 +12,7 @@ export const Breadcrumb = ({ categories }: BreadcrumbProps) => {
         {categories.map((category, index) => (
           <li key={index} className={styles.breadcrumbItem}>
             <span>{category}</span>
-            {index < categories.length - 1 && <span className={styles.breadcrumbSeparator}>></span>}
+            {index < categories.length - 1 && <span className={styles.breadcrumbSeparator}>&gt;</span>}
           </li>
         ))}
       </ul> : <span></span>}
