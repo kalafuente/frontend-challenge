@@ -5,6 +5,7 @@ import styles from './ProductCard.module.scss';
 import { useState } from 'react';
 import SpinnerOverlay from '../SpinnerOverlay';
 import { useTranslation } from 'react-i18next';
+import { handleKeyPress } from '../../utils';
 
 interface ProductCardProps {
   image: string;
@@ -34,7 +35,9 @@ export const ProductCard = ({ id, image, price, description, location, index, is
   return (
     <>
       {isLoading && <SpinnerOverlay />}
-      <a className={styles.cardContainer} tabIndex={index + 2} onClick={handleClick}>
+      <a
+        onKeyPress={(e) => handleKeyPress(e, handleClick)}
+        className={styles.cardContainer} tabIndex={index + 2} onClick={handleClick} data-testid="product-list">
         <div className={styles.card}>
           <img src={image} alt={description} className={styles.image} /> {/* el thumbnail se ve medio pixelado, por diseño esto ex 180x180 */}
           <div className={styles.details}>

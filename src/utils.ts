@@ -10,7 +10,7 @@ export const formattedPrice = (currentLanguage: string, price: Price) => {
 };
 
 //Keyboard handlers
-export const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>, callback: () => void) => {
+export const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement> | React.KeyboardEvent<HTMLAnchorElement>, callback: () => void) => {
   if (event.key === 'Enter') {
     callback();
   }

@@ -33,6 +33,11 @@
   height: 180px;
   padding-right: $space-small;
   border-radius: 4px;
+
+  @media (max-width: 768px) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .details {
@@ -43,11 +48,19 @@
 
 .price {
   font-size: $font-x-large;
+
+  @media (max-width: 768px) {
+    font-size: $font-large;
+  }
 }
 
 .description {
   font-size: $font-large;
   color: $dark-gray;
+
+  @media (max-width: 768px) {
+    font-size: $font-xx-small;
+  }
 }
 
 .location {
@@ -64,5 +77,9 @@
   img {
     width: 25px;
     margin-left: $space-small;
+
+    @media (max-width: 768px) {
+      width: 20px;
+    }
   }
 }
