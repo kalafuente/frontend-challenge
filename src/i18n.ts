@@ -4,16 +4,16 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
-      "search_placeholder": "Nunca dejes de buscar",
+      "search_placeholder": "Never stop searching",
       "ARS": "$",
       "no_results": "No results",
       "error_occurred": "An error occurred while processing your request.",
-      "product_description": "Descripción del producto",
-      "buy_button": 'Comprar',
-      "new": 'New',
-      "sold": 'Vendidos',
-      "free_shipping": 'Envío gratis',
-      "searcher": 'Buscador'
+      "product_description": "Product description",
+      "buy_button": "Buy",
+      "new": "New",
+      "sold": "Sold",
+      "free_shipping": "Free shipping",
+      "searcher": "Searcher"
     }
   },
   es: {
