@@ -1,6 +1,6 @@
 # Frontend challenge
 Para correr el cliente
-- Instalar, si es necesario la versión de node v18.17.0 (nvm use 18.17.0 en su defecto)
+- Instalar la versión de Node v18.17.0 (usar nvm use 18.17.0 si ya está instalada).
 - npm install
 - npm run dev 
 
